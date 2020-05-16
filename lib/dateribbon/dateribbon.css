@@ -1,0 +1,197 @@
+/* Wstazka krotka dzien miesiac */
+.ribbondate {
+    background: #c4453c;
+    float: left;
+    height: 75px;
+    margin: 30px;
+    position: relative;
+    width: 80px;
+}
+
+.ribbondate p {
+    font: 18px/30px Georgia, sans-serif;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 -1px 1px hsla(0,0%,0%,.1);
+}
+
+.ribbondate p:after {
+    background: #e6e6e6 url(http://noisepng.com/100-90-5-monochrome.png) 0 0 repeat;;
+    content: '';
+    height: 25px;
+    left: -20px;
+    position: absolute;
+    top: -25px;
+    width: 120px;
+    box-shadow: 0 10px 10px -10px hsla(0,0%,0%,.5);
+}
+.ribbondate .ribbonday {
+    display: block;
+    font-size: 36px;
+    padding-top: 6px;
+}
+.ribbondate .ribbonmonth {
+    display: block;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+/* Wstazka dluga dzien miesiac czas */
+.ribbondatetime {
+    background: #c4453c;
+    float: left;
+    height: 100px;
+    margin: 30px;
+    position: relative;
+    width: 80px;
+}
+.ribbondatetime p {
+    font: 18px/30px Georgia, sans-serif;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 -1px 1px hsla(0,0%,0%,.1);
+}
+.ribbondatetime p:after {
+    background: #e6e6e6 url(http://noisepng.com/100-90-5-monochrome.png) 0 0 repeat;;
+    content: '';
+    height: 25px;
+    left: -20px;
+    position: absolute;
+    top: -25px;
+    width: 120px;
+    box-shadow: 0 10px 10px -10px hsla(0,0%,0%,.5);
+}
+.ribbondatetime .ribbonday {
+    display: block;
+    font-size: 36px;
+    padding-top: 6px;
+}
+.ribbondatetime .ribbonmonth {
+    display: block;
+    font-size: 14px;
+    padding-top: 3px;
+}
+.ribbondatetime .ribbontime {
+    display: block;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+/* Kolory */
+.ribbon-red { 
+    color: #f6f6f6;
+    background: red;
+}
+.ribbon-grey { 
+    color: #f6f6f6;
+    background: grey;
+}
+.ribbon-blue {
+    color: #f6f6f6;
+    background: #337AB7;
+}
+.ribbon-green {
+    color: #f6f6f6;
+    background: #0A9700;
+}
+.ribbon-violet {
+    color: #f6f6f6;
+    background: #ee82ed;
+    background: #5D0097;
+}
+.ribbon-dark-violet {
+    color: #f6f6f6;
+    background: #5D0097;
+}
+.ribbon-pink {
+    color: #f6f6f6;
+    background: #F67EBC; 
+}
+.ribbon-white {
+    color: #523F2A;
+    background: #F0F0F0; 
+}
+/* 3B3125 braz  755631 */
+
+
+/* Traditional Ribbon */
+.traditional:after, .traditional:before { 
+    border-top: 15px solid #c4453c; 
+    bottom: -15px;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.traditional:after {
+    border-right: 40px solid transparent;  
+    left: 0;  
+}
+.traditional:before {
+    border-left: 40px solid transparent;  
+    right: 0;  
+}
+
+.ribbon-red:after, .ribbon-red:before{
+    border-top: 15px solid red;
+} 
+.ribbon-grey:after, .ribbon-grey:before{
+    border-top: 15px solid gray;
+} 
+.ribbon-blue:after, .ribbon-blue:before{
+    border-top: 15px solid #337AB7;
+} 
+.ribbon-green:after, .ribbon-green:before {
+    border-top: 15px solid #0A9700; 
+}
+.ribbon-violet:after, .ribbon-violet:before {
+    border-top: 15px solid #5D0097; 
+}
+.ribbon-pink:after, .ribbon-pink:before {
+    border-top: 15px solid #F67EBC; 
+}
+.ribbon-white:after, .ribbon-white:before {
+    border-top: 15px solid #F0F0F0;
+}
+
+
+/* Cut-off Ribbon */
+.cut-off:after {
+    background-image: -webkit-linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c), 
+                      -webkit-linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-image:    -moz-linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c),
+                         -moz-linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-image:     -ms-linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c),
+                          -ms-linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-image:      -o-linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c),
+                           -o-linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-image:         linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c),
+                              linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-repeat: repeat-x;
+    background-position: 50% 0;
+    background-size: 10px 10px;
+    bottom: -5px;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute; /* Make sure the parent element has a position set */
+    right: 0;
+}
+
+/* Rounded Ribbon */
+.rounded:before {
+    background-image: -webkit-radial-gradient(#c4453c 50%, transparent 50%);
+    background-position: 0% 100%;
+    background-repeat: repeat;
+    background-size: 10px 10px;
+    bottom: -5px;
+    content: '';
+    height: 95px;
+    left: -5px;
+    position: absolute;
+    right: -5px;
+}
+
+@media print {
+  body {-webkit-print-color-adjust: exact;}
+}
